@@ -13,7 +13,24 @@
         <script>
         /*map initialized*/
          var map=new MapmyIndia.Map("map",{ center:[20.5937, 78.9629], zoomControl: true, hybrid:true, editable: true , search:true, location:true}); 
-       
+        
+
+        //Icon initialized
+        var iconBase =
+            'https://developers.google.com/maps/documentation/javascript/examples/full/images/';
+
+            var icons = {
+          parking: {
+            icon: iconBase + 'parking_lot_maps.png'
+          },
+          library: {
+            icon: iconBase + 'library_maps.png'
+          },
+          info: {
+            icon: iconBase + 'info-i_maps.png'
+          }
+        };
+
 
         /*Latitude,Longitude set*/
         var LatLng = [
